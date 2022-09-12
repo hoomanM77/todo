@@ -1,0 +1,39 @@
+*{
+    font-family: Cairo, sans-serif;
+}
+.error_message input{
+    border:1px solid red;
+}
+.error_message i{
+    display: block;
+    animation: shaking 300ms forwards;
+}
+@keyframes shaking {
+    0%{
+        right: 10px;
+    }
+    25%{
+        right: 12px;
+    }
+    50%{
+        right: 10px;
+    }
+    75%{
+        right: 12px;
+    }
+    100%{
+        right: 10px;
+    }
+}
+.bi-exclamation-circle-fill{
+    position: absolute;
+    right: 11px;
+    top: 0;
+    font-size: 1.8rem;
+    display: none;
+    color: red;
+}
+.error_message input:focus{
+    box-shadow: 0 0 0 .25rem rgba(226,23,4,0.62);
+    border-color: red;
+}
